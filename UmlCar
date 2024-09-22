@@ -1,0 +1,15 @@
+@startuml
+
+class Car {
+    - carname: String
+    - model: String
+    - year: int
+    - price: double
+    + Car()
+    + Car(carname: String, model: String, year: int, price: double)
+    + displayInfo(): void
+    + start(): void
+    + upgradeCar(feature: String, additionalCost: double): void
+}
+
+@enduml
