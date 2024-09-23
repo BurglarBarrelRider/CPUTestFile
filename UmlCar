@@ -1,15 +1,15 @@
 @startuml
 
-class Car {
-    - carname: String
-    - model: String
+class Computer {
+    - Computername: String
+    - OC: String
     - year: int
     - price: double
-    + Car()
-    + Car(carname: String, model: String, year: int, price: double)
+    + Computer()
+    + Computer(Computername: String, OC: String, year: int, price: double)
     + displayInfo(): void
     + start(): void
-    + upgradeCar(feature: String, additionalCost: double): void
+    + upgradeComputer(feature: String, additionalCost: double): void
 }
 
 @enduml
