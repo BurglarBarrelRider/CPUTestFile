@@ -1,53 +1,53 @@
 
 
-public class Car {
 
-    private String  carname;
-    private String  model;
-    private int year;
+public class Computer {
+
+    private String  Computername;
+    private String  OC;
+    private int   year;
     private double price;
 
-    public Car() {  // конструктор дефолт
-        this.carname = "";
-        this.model = "";
+    public Computer() {  // конструктор дефолт
+        this.Computername = "";
+        this.OC = "";
         this.year = 0;
         this.price = 0.0;
     }
-    public Car(String carname, String model, int year, double price) {
-        this.carname = carname;
-        this.model = model;
+    public Computer(String Computername, String OC, int year, double price) {
+        this.Computername = Computername;
+        this.OC = OC;
         this.year = year;
         this.price = price;
     }
     public void displayInfo() {
-        System.out.println("Машина");
-        System.out.println("carname " + this.carname);
-        System.out.println("Model " + this.model);
+        System.out.println("Computer");
+        System.out.println("Computername " + this.Computername);
+        System.out.println("OC " + this.OC);
         System.out.println("Year " + this.year);
         System.out.println("Price " + this.price);
     }
 
     public void start() {
-        System.out.println(this.carname + " " + this.model + " is starting...");
+        System.out.println(this.Computername + " " + this.OC + " is starting...");
     }
 
-    public void upgradeCar(String feature, double additionalCost) {
+    public void upgradeComputer(String feature, double additionalCost) {
         this.price += additionalCost;
-        System.out.println("Car was modified with " + feature + ". New price equals = " + this.price);
+        System.out.println("Computer was modified with " + feature + ". New price equals = " + this.price);
     }
 
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car("Toyota", "Camry", 2018, 10000.00);
-        Car car3 = new Car("Shevrole", "Impala", 1999, 33000.00);
+        Computer Computer1 = new Computer();
+        Computer Computer2 = new Computer("Acer", "Windows", 2018, 10000.00);
+        Computer Computer3 = new Computer("Asus", "MacOS", 1999, 33000.00);
 
-        car1.displayInfo();
+        Computer1.displayInfo();
         System.out.println();
-        car2.displayInfo();
+        Computer2.displayInfo();
         System.out.println();
-        car3.displayInfo();
+        Computer3.displayInfo();
 
-        car2.displayInfo();
+        Computer2.displayInfo();
     }
 }
-
